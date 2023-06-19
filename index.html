@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <title></title>
+</head>
+
+<body>
+  <main>
+    <div id="innerContainer">
+      <h1>Body Mass Index Calculator</h1>
+
+      <div id="innerContent">
+
+        <div id="ageInput">
+          <label for="age">Age</label>
+          <input type="text" class="text-input" name="" id="age" required autocomplete="on">
+        </div>
+
+        <div id="gender">
+          <label class="container">
+            <input type="radio" name="radio">
+            <p class="text">Male</p>
+            <span class="checkmark"></span>
+          </label>
+
+          <label class="container">
+            <input type="radio" name="radio">
+            <p class="text">Female</p>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <div id="hwContainer">
+          <div id="heightInput">
+            <label for="height">Height</label>
+            <input type="text" name="height" id="heightin" required>
+            <select name="" id="">
+              <option value="">CM</option>
+              <option value="">INCHES</option>
+            </select>
+          </div>
+
+          <div id="weightInput">
+            <label for="weight">Weight</label>
+            <input type="text" name="weight" id="weightin" required>
+            <select name="" id="">
+              <option id="pound" value="">POUNDS</option>
+              <option value="">KG</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="btn">Calculate BMI</button>
+      </div>
+
+      <div id="resultSec">
+        <p>Your BMI is</p>
+        <div id="result"></div>
+        <p class="comment"></p>
+      </div>
+      <div class="footer">Courtesy Team C-Drive</div>
+    </div>
+
+
+    <!-- Modal Pop-up -->
+
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalText"></p>
+      </div>
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>
